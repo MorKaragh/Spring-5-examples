@@ -1,2 +1,2 @@
 # Spring-5-examples
-Some handmade examples from the "Spring 5 for professionals" book 
+Примеры, котоыре писал в процессе изучения кники "Spring 5 для профессионалов"
