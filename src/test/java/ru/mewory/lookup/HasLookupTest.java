@@ -10,16 +10,16 @@ import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class HasMethodProxyTest {
+public class HasLookupTest {
 
     @Autowired
-    private HasMethodProxy hasMethodProxy;
+    private HasLookup hasLookup;
 
     @Test
     public void getNewObject() {
 
-        String stringOne = hasMethodProxy.getNewObject().getId();
-        String stringTwo = hasMethodProxy.getNewObject().getId();
+        String stringOne = hasLookup.getNewObject().getId();
+        String stringTwo = hasLookup.getNewObject().getId();
 
         assertNotEquals(stringOne, stringTwo);
 
