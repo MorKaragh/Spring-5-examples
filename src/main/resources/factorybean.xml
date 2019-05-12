@@ -9,14 +9,14 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <bean id="shaDigestFactoryBean" class="ru.mewory.factorybean.MessageDigestFactory" p:algorythm="SHA1"/>
+    <bean id="shaDigestFactoryBean" class="ru.mewory.ioc.factorybean.MessageDigestFactory" p:algorythm="SHA1"/>
 
-    <bean id="mdFactoryMethod" class="ru.mewory.factorybean.DigestFactoryMethod"/>
+    <bean id="mdFactoryMethod" class="ru.mewory.ioc.factorybean.DigestFactoryMethod"/>
 
     <bean id="mdDigestFactoryMethod" factory-bean="mdFactoryMethod" factory-method="factoryMethod"/>
 
-    <bean name="hasDigest" class="ru.mewory.factorybean.HasDigest" p:digest-ref="shaDigestFactoryBean"/>
+    <bean name="hasDigest" class="ru.mewory.ioc.factorybean.HasDigest" p:digest-ref="shaDigestFactoryBean"/>
 
-    <bean name="hasDigestFromFactoryMethod" class="ru.mewory.factorybean.HasDigest" p:digest-ref="mdDigestFactoryMethod"/>
+    <bean name="hasDigestFromFactoryMethod" class="ru.mewory.ioc.factorybean.HasDigest" p:digest-ref="mdDigestFactoryMethod"/>
 
 </beans>

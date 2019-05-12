@@ -9,29 +9,29 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 
-    <bean id="foo" class="ru.mewory.autowiretypes.Foo">
+    <bean id="foo" class="ru.mewory.ioc.autowiretypes.Foo">
     </bean>
 
-    <bean id="idNotEqualToFieldName" class="ru.mewory.autowiretypes.Baz">
+    <bean id="idNotEqualToFieldName" class="ru.mewory.ioc.autowiretypes.Baz">
     </bean>
 
-    <bean id="anotherIdNotEqualToFieldName" class="ru.mewory.autowiretypes.Bar">
+    <bean id="anotherIdNotEqualToFieldName" class="ru.mewory.ioc.autowiretypes.Bar">
     </bean>
 
     <bean id="byName" autowire="byName" lazy-init="true"
-          class="ru.mewory.autowiretypes.HasDifferentConstructorsAndSetters">
+          class="ru.mewory.ioc.autowiretypes.HasDifferentConstructorsAndSetters">
 
     </bean>
 
 
     <bean id="byType" autowire="byType" lazy-init="true"
-          class="ru.mewory.autowiretypes.HasDifferentConstructorsAndSetters">
+          class="ru.mewory.ioc.autowiretypes.HasDifferentConstructorsAndSetters">
 
     </bean>
 
 
     <bean id="byConstructor" autowire="constructor" lazy-init="true"
-          class="ru.mewory.autowiretypes.HasDifferentConstructorsAndSetters">
+          class="ru.mewory.ioc.autowiretypes.HasDifferentConstructorsAndSetters">
 
     </bean>
 
