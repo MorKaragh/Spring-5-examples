@@ -6,4 +6,8 @@ public class LuckyNumber {
         return 7;
     }
 
+    public int getUnluckyNumber(int number){
+        return Integer.MIN_VALUE;
+    }
+
 }
